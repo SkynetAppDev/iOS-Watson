@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010C0F601C8C236C00641DD0 /* LoginUIViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C0F5F1C8C236C00641DD0 /* LoginUIViewDelegate.swift */; };
 		01528BF41C6F017200D5647A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528BF31C6F017200D5647A /* AppDelegate.swift */; };
 		01528BF61C6F017200D5647A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528BF51C6F017200D5647A /* ViewController.swift */; };
 		01528BF91C6F017200D5647A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01528BF71C6F017200D5647A /* Main.storyboard */; };
@@ -15,6 +16,41 @@
 		01528C011C6F017200D5647A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01528BFF1C6F017200D5647A /* LaunchScreen.storyboard */; };
 		01528C0C1C6F017200D5647A /* AskLyteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C0B1C6F017200D5647A /* AskLyteTests.swift */; };
 		01528C171C6F017200D5647A /* AskLyteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C161C6F017200D5647A /* AskLyteUITests.swift */; };
+		01528C251C6FB57E00D5647A /* LoginVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C241C6FB57E00D5647A /* LoginVO.swift */; };
+		01528C271C6FB9C800D5647A /* LoginActionDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C261C6FB9C800D5647A /* LoginActionDelegateHandler.swift */; };
+		01528C291C6FC18800D5647A /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C281C6FC18800D5647A /* LoginUIView.swift */; };
+		01528C2B1C6FF30100D5647A /* LoginActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01528C2A1C6FF30100D5647A /* LoginActionDelegate.swift */; };
+		0199A1A51C90088F00A78596 /* HTTPStatusCodes.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */; };
+		0199A1A61C90088F00A78596 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F651C8F278D0006BF48 /* Alamofire.framework */; };
+		0199A1A71C90088F00A78596 /* ObjectMapper.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */; };
+		0199A1A81C90088F00A78596 /* AlamofireObjectMapper.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */; };
+		0199A1A91C90088F00A78596 /* Starscream.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F6B1C8F278D0006BF48 /* Starscream.framework */; };
+		0199A1AA1C90088F00A78596 /* XCGLogger.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */; };
+		0199A1AB1C90088F00A78596 /* WatsonDeveloperCloud.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */; };
+		0199A1AC1C9008C300A78596 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */; };
+		0199A1AD1C9008C300A78596 /* HTTPStatusCodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1AE1C9008C300A78596 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F651C8F278D0006BF48 /* Alamofire.framework */; };
+		0199A1AF1C9008C300A78596 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F651C8F278D0006BF48 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1B01C9008C300A78596 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */; };
+		0199A1B11C9008C300A78596 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1B21C9008C300A78596 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */; };
+		0199A1B31C9008C300A78596 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1B41C9008C300A78596 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6B1C8F278D0006BF48 /* Starscream.framework */; };
+		0199A1B51C9008C300A78596 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6B1C8F278D0006BF48 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1B61C9008C300A78596 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */; };
+		0199A1B71C9008C300A78596 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0199A1B81C9008C300A78596 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */; };
+		0199A1B91C9008C300A78596 /* WatsonDeveloperCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1DF43F5F1C89358D0006BF48 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF43F5E1C89358D0006BF48 /* UIUtils.swift */; };
+		1DF43F711C8F278D0006BF48 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */; };
+		1DF43F731C8F278D0006BF48 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F651C8F278D0006BF48 /* Alamofire.framework */; };
+		1DF43F751C8F278D0006BF48 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */; };
+		1DF43F771C8F278D0006BF48 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */; };
+		1DF43F791C8F278D0006BF48 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6B1C8F278D0006BF48 /* Starscream.framework */; };
+		1DF43F7B1C8F278D0006BF48 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */; };
+		1DF43F7D1C8F278D0006BF48 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */; };
+		1DF75DCF1C8783930086C867 /* LoginDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF75DCE1C8783930086C867 /* LoginDataDelegate.swift */; };
+		1DF75DD11C87840C0086C867 /* LoginWSDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF75DD01C87840C0086C867 /* LoginWSDataHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +70,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0199A1BA1C9008C300A78596 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0199A1B11C9008C300A78596 /* ObjectMapper.framework in Embed Frameworks */,
+				0199A1AD1C9008C300A78596 /* HTTPStatusCodes.framework in Embed Frameworks */,
+				0199A1AF1C9008C300A78596 /* Alamofire.framework in Embed Frameworks */,
+				0199A1B51C9008C300A78596 /* Starscream.framework in Embed Frameworks */,
+				0199A1B31C9008C300A78596 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				0199A1B91C9008C300A78596 /* WatsonDeveloperCloud.framework in Embed Frameworks */,
+				0199A1B71C9008C300A78596 /* XCGLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		010C0F5F1C8C236C00641DD0 /* LoginUIViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUIViewDelegate.swift; sourceTree = "<group>"; };
 		01528BF01C6F017200D5647A /* AskLyte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskLyte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01528BF31C6F017200D5647A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01528BF51C6F017200D5647A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +106,20 @@
 		01528C121C6F017200D5647A /* AskLyteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AskLyteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01528C161C6F017200D5647A /* AskLyteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskLyteUITests.swift; sourceTree = "<group>"; };
 		01528C181C6F017200D5647A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01528C241C6FB57E00D5647A /* LoginVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVO.swift; path = Login/LoginVO.swift; sourceTree = "<group>"; };
+		01528C261C6FB9C800D5647A /* LoginActionDelegateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginActionDelegateHandler.swift; path = Login/LoginActionDelegateHandler.swift; sourceTree = "<group>"; };
+		01528C281C6FC18800D5647A /* LoginUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginUIView.swift; path = Login/LoginUIView.swift; sourceTree = "<group>"; };
+		01528C2A1C6FF30100D5647A /* LoginActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginActionDelegate.swift; path = Login/LoginActionDelegate.swift; sourceTree = "<group>"; };
+		1DF43F5E1C89358D0006BF48 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPStatusCodes.framework; path = Carthage/Build/iOS/HTTPStatusCodes.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F651C8F278D0006BF48 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F6B1C8F278D0006BF48 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = SOURCE_ROOT; };
+		1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = SOURCE_ROOT; };
+		1DF75DCE1C8783930086C867 /* LoginDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataDelegate.swift; sourceTree = "<group>"; };
+		1DF75DD01C87840C0086C867 /* LoginWSDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWSDataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +127,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF43F751C8F278D0006BF48 /* ObjectMapper.framework in Frameworks */,
+				0199A1B41C9008C300A78596 /* Starscream.framework in Frameworks */,
+				0199A1B61C9008C300A78596 /* XCGLogger.framework in Frameworks */,
+				0199A1B21C9008C300A78596 /* AlamofireObjectMapper.framework in Frameworks */,
+				0199A1AE1C9008C300A78596 /* Alamofire.framework in Frameworks */,
+				0199A1B81C9008C300A78596 /* WatsonDeveloperCloud.framework in Frameworks */,
+				0199A1B01C9008C300A78596 /* ObjectMapper.framework in Frameworks */,
+				1DF43F711C8F278D0006BF48 /* HTTPStatusCodes.framework in Frameworks */,
+				1DF43F731C8F278D0006BF48 /* Alamofire.framework in Frameworks */,
+				1DF43F791C8F278D0006BF48 /* Starscream.framework in Frameworks */,
+				1DF43F771C8F278D0006BF48 /* AlamofireObjectMapper.framework in Frameworks */,
+				1DF43F7D1C8F278D0006BF48 /* WatsonDeveloperCloud.framework in Frameworks */,
+				1DF43F7B1C8F278D0006BF48 /* XCGLogger.framework in Frameworks */,
+				0199A1AC1C9008C300A78596 /* HTTPStatusCodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +184,9 @@
 		01528BF21C6F017200D5647A /* AskLyte */ = {
 			isa = PBXGroup;
 			children = (
+				1DF43F611C8F26470006BF48 /* Frameworks */,
+				1DF43F601C8935950006BF48 /* Utils */,
+				018FFFF51C820F2F00A03563 /* Login */,
 				01528BF31C6F017200D5647A /* AppDelegate.swift */,
 				01528BF51C6F017200D5647A /* ViewController.swift */,
 				01528BF71C6F017200D5647A /* Main.storyboard */,
@@ -128,6 +216,50 @@
 			path = AskLyteUITests;
 			sourceTree = "<group>";
 		};
+		018FFFF51C820F2F00A03563 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				01528C2A1C6FF30100D5647A /* LoginActionDelegate.swift */,
+				1DF75DCE1C8783930086C867 /* LoginDataDelegate.swift */,
+				01528C261C6FB9C800D5647A /* LoginActionDelegateHandler.swift */,
+				1DF75DD01C87840C0086C867 /* LoginWSDataHandler.swift */,
+				01528C281C6FC18800D5647A /* LoginUIView.swift */,
+				01528C241C6FB57E00D5647A /* LoginVO.swift */,
+				010C0F5F1C8C236C00641DD0 /* LoginUIViewDelegate.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1DF43F601C8935950006BF48 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1DF43F5E1C89358D0006BF48 /* UIUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1DF43F611C8F26470006BF48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF43F621C8F264F0006BF48 /* Watson */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DF43F621C8F264F0006BF48 /* Watson */ = {
+			isa = PBXGroup;
+			children = (
+				1DF43F631C8F278D0006BF48 /* HTTPStatusCodes.framework */,
+				1DF43F651C8F278D0006BF48 /* Alamofire.framework */,
+				1DF43F671C8F278D0006BF48 /* ObjectMapper.framework */,
+				1DF43F691C8F278D0006BF48 /* AlamofireObjectMapper.framework */,
+				1DF43F6B1C8F278D0006BF48 /* Starscream.framework */,
+				1DF43F6D1C8F278D0006BF48 /* XCGLogger.framework */,
+				1DF43F6F1C8F278D0006BF48 /* WatsonDeveloperCloud.framework */,
+			);
+			name = Watson;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +270,7 @@
 				01528BEC1C6F017200D5647A /* Sources */,
 				01528BED1C6F017200D5647A /* Frameworks */,
 				01528BEE1C6F017200D5647A /* Resources */,
+				0199A1BA1C9008C300A78596 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +365,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0199A1A51C90088F00A78596 /* HTTPStatusCodes.framework in Resources */,
+				0199A1A61C90088F00A78596 /* Alamofire.framework in Resources */,
+				0199A1A71C90088F00A78596 /* ObjectMapper.framework in Resources */,
+				0199A1A81C90088F00A78596 /* AlamofireObjectMapper.framework in Resources */,
+				0199A1A91C90088F00A78596 /* Starscream.framework in Resources */,
+				0199A1AA1C90088F00A78596 /* XCGLogger.framework in Resources */,
+				0199A1AB1C90088F00A78596 /* WatsonDeveloperCloud.framework in Resources */,
 				01528C011C6F017200D5647A /* LaunchScreen.storyboard in Resources */,
 				01528BFE1C6F017200D5647A /* Assets.xcassets in Resources */,
 				01528BF91C6F017200D5647A /* Main.storyboard in Resources */,
@@ -259,8 +399,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF75DCF1C8783930086C867 /* LoginDataDelegate.swift in Sources */,
+				01528C291C6FC18800D5647A /* LoginUIView.swift in Sources */,
+				1DF75DD11C87840C0086C867 /* LoginWSDataHandler.swift in Sources */,
 				01528BF61C6F017200D5647A /* ViewController.swift in Sources */,
+				01528C271C6FB9C800D5647A /* LoginActionDelegateHandler.swift in Sources */,
+				1DF43F5F1C89358D0006BF48 /* UIUtils.swift in Sources */,
+				010C0F601C8C236C00641DD0 /* LoginUIViewDelegate.swift in Sources */,
 				01528BF41C6F017200D5647A /* AppDelegate.swift in Sources */,
+				01528C251C6FB57E00D5647A /* LoginVO.swift in Sources */,
+				01528C2B1C6FF30100D5647A /* LoginActionDelegate.swift in Sources */,
 				01528BFC1C6F017200D5647A /* AskLyte.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +549,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskLyte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AskLyte.AskLyte;
@@ -412,6 +565,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AskLyte/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AskLyte.AskLyte;
@@ -486,6 +644,7 @@
 				01528C1D1C6F017200D5647A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01528C1E1C6F017200D5647A /* Build configuration list for PBXNativeTarget "AskLyteTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +653,7 @@
 				01528C201C6F017200D5647A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01528C211C6F017200D5647A /* Build configuration list for PBXNativeTarget "AskLyteUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +662,7 @@
 				01528C231C6F017200D5647A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
