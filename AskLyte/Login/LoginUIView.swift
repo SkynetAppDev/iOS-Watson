@@ -57,13 +57,13 @@ class LoginView: UIView, LoginUIViewDelegate{
         
         //Add Login Button
         let btn = UIUtils.getButton("Login Save",
-            frameIP: CGRectMake(50, 300, 200, 100));
-        btn.enabled = true
-        btn.userInteractionEnabled = true
+            frameIP: CGRect(x: 50, y: 300, width: 200, height: 100));
+        btn.isEnabled = true
+        btn.isUserInteractionEnabled = true
         
         
         print("setting login target")
-        btn.addTarget(loginActionHandlerDelegate, action: "handleLoginSubmit:", forControlEvents: UIControlEvents.TouchUpInside)
+        btn.addTarget(loginActionHandlerDelegate, action: "handleLoginSubmit:", for: UIControlEvents.touchUpInside)
         print("After addTarget")
         self.addSubview(btn)
         print("After add View")

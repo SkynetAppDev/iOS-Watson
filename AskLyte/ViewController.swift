@@ -77,17 +77,17 @@ class ViewController: UIViewController {
         
         //let loginActionHandler = LoginActionHandler();
         
-        let button = UIButton(type: UIButtonType.System) as UIButton
-        button.setTitle("Tap Me!", forState: UIControlState.Normal)
+        let button = UIButton(type: UIButtonType.system) as UIButton
+        button.setTitle("Tap Me!", for: UIControlState())
         //button.buttonType = UIButtonType.System
-        button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        button.setTitleColor(UIColor.blue, for: UIControlState())
         //button.frame = CGRectMake(200, 65, 46, 30)
         //button.addTarget(self, action: Selector("tapped:"), forControlEvents:
         //  UIControlEvents.TouchUpInside)
         
         //view.addSubview(button)
         
-        let loginView = LoginView(frame: CGRectMake(10, 40, 500, 500))
+        let loginView = LoginView(frame: CGRect(x: 10, y: 40, width: 500, height: 500))
         let loginActionHandler = LoginActionDelegateHandler();
         let loginWSDataHandler = LoginWSDataHandler();
         
@@ -108,9 +108,9 @@ class ViewController: UIViewController {
     }
 
     
-    func printProfile(profile: PersonalityInsights.Trait){
+    func printProfile(_ profile: PersonalityInsights.Trait){
         
-        for var i = 0; i < profile.children.children![2].children?.count ; ++i {
+        for var i = 0; i < profile.children.children![2].children?.count ; i += 1 {
             print("---------in loop-------")
             print(profile.tree?.children![2].children![i].ID);
             print(profile.tree?.children![2].children![i].category);

@@ -10,6 +10,6 @@ import Foundation
 
 protocol LoginDataDelegate: class{
     
-    func confirmLoginInformation(username : String, pwd : String);
+    func confirmLoginInformation(_ username : String, pwd : String);
     
 }

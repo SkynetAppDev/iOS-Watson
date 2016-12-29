@@ -11,6 +11,6 @@ import UIKit
 
 protocol LoginActionDelegate: class, UITextFieldDelegate{
     
-    func handleLoginSubmit(sender : UIButton!);
+    func handleLoginSubmit(_ sender : UIButton!);
     
 }

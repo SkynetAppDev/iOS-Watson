@@ -19,7 +19,7 @@ class LoginWSDataHandler : NSObject, LoginDataDelegate
     }
     
     
-    func confirmLoginInformation(username: String, pwd: String) {
+    func confirmLoginInformation(_ username: String, pwd: String) {
         
         print("Handling Login Username and Pwd March 6th")
         

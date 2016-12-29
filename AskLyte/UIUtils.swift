@@ -13,22 +13,22 @@ import UIKit
 class UIUtils{
     
     
-    static func getTextField(label : String, frameIP: CGRect) -> UITextField{
+    static func getTextField(_ label : String, frameIP: CGRect) -> UITextField{
         
         let textField = UITextField(frame: frameIP)
         textField.placeholder = label;
         textField.font = UIFont(name: "Arial-BoldMT", size: 22)
-        textField.borderStyle = UITextBorderStyle.Line
+        textField.borderStyle = UITextBorderStyle.line
         return textField;
     
     }
-    static func getButton(label : String, frameIP: CGRect) -> UIButton{
+    static func getButton(_ label : String, frameIP: CGRect) -> UIButton{
             
             
-            let btn = UIButton(type: UIButtonType.System) as UIButton
-            btn.setTitle(label, forState: UIControlState.Normal)
-            btn.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
-            btn.frame=CGRectMake(50, 300, 200, 100)
+            let btn = UIButton(type: UIButtonType.system) as UIButton
+            btn.setTitle(label, for: UIControlState())
+            btn.setTitleColor(UIColor.blue, for: UIControlState())
+            btn.frame=CGRect(x: 50, y: 300, width: 200, height: 100)
             return btn;
             
     }

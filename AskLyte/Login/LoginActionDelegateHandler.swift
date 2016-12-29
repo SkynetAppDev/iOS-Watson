@@ -26,7 +26,7 @@ class LoginActionDelegateHandler : NSObject, LoginActionDelegate
     
     
     
-    func handleLoginSubmit(sender : UIButton!){
+    func handleLoginSubmit(_ sender : UIButton!){
     
         print("HandlingSubmitAction")
         //Get the text field value
